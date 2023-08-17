@@ -1,0 +1,26 @@
+/* menu Card */
+.product-card-menu-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 322px;
+  height: 100px;
+  border: solid 1px #b1b1b1;
+  overflow: hidden;
+  padding-left: 11px;
+}
+.product-card-title-description {
+  font-family: Kanit;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.product-card-title {
+  font-weight: 400;
+}
+.product-card-description {
+  font-weight: 300;
+  padding-right: 2px;
+}
+
+.img-menu {
+  width: 100%;
+}

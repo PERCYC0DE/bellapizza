@@ -1,0 +1,53 @@
+.resume-container {
+  width: 14.375rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #d1cdcd;
+  background: #fff;
+  box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 1rem;
+}
+
+.product-columns {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.resume-title {
+  color: #000;
+  font-size: 1.25rem;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-title {
+  color: #000;
+  font-size: 16px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-total-prize {
+  color: #000;
+  font-size: 16px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.total-resume {
+  color: #000;
+  font-size: 16px;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
