@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Landing Page */
+
+.banner-container {
+  background-image: url("https://res.cloudinary.com/do5fnhctm/image/upload/v1687458024/123_1_ghwu2o.png");
+
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+  background-size: cover;
+  aspect-ratio: 16/3.5;
+  min-height: 170px;
+  /* height: 18vh; */
+  width: 100%;
+  min-width: 22.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  font-family: Anton;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  left: 2%;
+  font-size: 8rem;
+}
+
+.banner-text2 {
+  padding-left: 3%;
+}
+
+/* Columns Info */
+
+.info-carousel-container {
+  display: flex;
+}
+
+.banner-video {
+  padding: 18px 18px;
+  margin: 0 auto;
+}
+
+.banner-delivery {
+  padding: 18px 18px;
+  margin: 0 auto;
+}
+
+.info-text-container {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.anton-32 {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-family: Anton;
+}
+
+.anton-24 {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-family: Anton;
+}
+
+.promotion-info {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-family: Anton;
+  padding: 2rem;
+}
+
+.column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.column-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.order-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+}
+
+.menu-button {
+  color: #0f58ae;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.first-add,
+.second-add,
+.both-adds {
+  display: none;
+}
+
+/* MEDIA MAX WIDTH */
+
+@media (1260px <= width <= 1500px) {
+  .banner-text {
+    font-size: 7rem;
+  }
+}
+
+@media (1000px <= width <= 1260px) {
+  .banner-container {
+    background-position: 10%;
+  }
+
+  .banner-text {
+    font-size: 5.5rem;
+  }
+}
+
+@media (767px <= width <= 1000px) {
+  .banner-container {
+    background-position: 80%;
+  }
+
+  .banner-text {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .promotion-info {
+    font-size: 26px;
+    padding: 16px;
+  }
+
+  .column-info {
+    padding: 16px;
+  }
+
+  .banner-video {
+    padding: 9px;
+  }
+
+  .banner-delivery {
+    padding: 9px;
+  }
+
+  .anton-32 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 780px) {
+  .info-carousel-container {
+    padding: 1rem;
+    min-width: 360px;
+  }
+
+  .banner-delivery {
+    display: none;
+  }
+
+  .banner-video {
+    display: none;
+  }
+
+  .mobile-add-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+
+  .first-add,
+  .second-add {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Landing Page 767*/
+
+  .banner-container {
+    background-position: 30%;
+  }
+
+  .banner-text {
+    font-size: 3.75rem;
+  }
+
+  @media (max-width: 540px) {
+    /* Landing page 540 */
+    .banner-container {
+      background-position: 60%;
+    }
+
+    .banner-text {
+      font-size: 2.625rem;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .column-container {
+      grid-template-columns: 1fr;
+    }
+
+    .mobile-add-container {
+      padding: 0;
+      padding-bottom: 2rem;
+      min-width: 360px;
+    }
+
+    .first-add,
+    .second-add {
+      display: none;
+    }
+
+    .both-adds {
+      display: block;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .banner-text {
+      font-size: 2.2rem;
+    }
+  }
+}

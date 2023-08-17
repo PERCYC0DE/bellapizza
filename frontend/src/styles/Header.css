@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600&display=swap");
+
+/* Header */
+.navbar {
+  padding: 0px;
+  min-width: 22.5rem;
+}
+
+.navbar-collapse {
+  padding-right: 3rem;
+}
+
+.nav-link p {
+  margin: auto;
+}
+
+.navbar-brand {
+  padding: 0;
+  padding-left: 3rem;
+}
+
+.container-fluid {
+  padding: 0rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  max-height: 5rem;
+}
+
+.navbar-collapse {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.active-logo-navbar {
+  display: none;
+}
+
+.desktop-showup {
+  font-family: "Anton";
+  color: #000000;
+  font-size: 2rem;
+}
+
+/* MEDIA MAX WIDTH */
+
+@media (max-width: 767px) {
+  /* NAVBAR */
+
+  .desktop-showup {
+    display: none;
+  }
+
+  .navbar-collapse {
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 105vh;
+    width: 100vw;
+    min-width: 22.5rem;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .navbar-nav {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav-link {
+    color: white;
+    font-family: "Anton";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+
+    margin: 1rem;
+  }
+
+  .navbar-toggler {
+    border: solid 3px red;
+  }
+
+  .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  #toggle-button {
+    color: white;
+    font-family: "Anton";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    border: none;
+  }
+
+  #toggle-button:active {
+    color: #930000;
+  }
+
+  #toggle-button:hover {
+    color: #930000;
+  }
+
+  .active-logo-navbar {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 15.625rem;
+    padding-top: 25%;
+  }
+}
+
